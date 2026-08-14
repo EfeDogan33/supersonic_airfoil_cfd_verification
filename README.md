@@ -25,4 +25,22 @@ This project builds a fully automated CFD pipeline to **verify supersonic aerody
 - 🎯 **<0.25% error** across 20 cases (Mach 2–4, AoA 0–15°)  
 - 📐 **GCI-based uncertainty:** 0.087%  
 - 📈 **Observed order:** p = 4.62  
-- ✅ **Asymptotic convergence verified** (≈ 1.002)  
+- ✅ **Asymptotic convergence verified** (≈ 1.002)
+
+- ---
+
+## 📊 Key Results
+
+### Drag Coefficient Verification
+
+<div align="center">
+  <img src="./cd_verification.png" width="88%">
+</div>
+
+| Mach | AoA Range | Max Error |
+|:---:|:---:|:---:|
+| **2.0** | 0°–15° | **< 0.21%** |
+| **3.0** | 0°–15° | **< 0.24%** |
+| **4.0** | 0°–15° | **< 0.18%** |
+
+---
