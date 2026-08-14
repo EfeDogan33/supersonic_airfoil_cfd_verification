@@ -18,3 +18,11 @@
 </div>
 
 ---
+## ⚡ 30-Second Overview
+
+This project builds a fully automated CFD pipeline to **verify supersonic aerodynamic predictions** against analytical shock-expansion theory.
+
+- 🎯 **<0.25% error** across 20 cases (Mach 2–4, AoA 0–15°)  
+- 📐 **GCI-based uncertainty:** 0.087%  
+- 📈 **Observed order:** p = 4.62  
+- ✅ **Asymptotic convergence verified** (≈ 1.002)  
