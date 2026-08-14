@@ -56,3 +56,21 @@ This project builds a fully automated CFD pipeline to **verify supersonic aerody
 - Excellent agreement with analytical distribution  
 
 ---
+
+## 🧪 Grid Convergence (GCI)
+
+- **Observed order:** p = 4.62  
+- **GCI (fine grid):** 0.087%  
+- **Asymptotic ratio:** 1.002 → verified  
+
+| Mesh | Elements | Cd |
+|:---|:---:|:---:|
+| **Fine** | 302K | 0.017720 |
+| **Medium** | 167K | 0.017684 |
+| **Coarse** | 86K | 0.017509 |
+
+- **Richardson Extrapolated:** 0.017732  
+- **Analytical Solution:** 0.017740 (Deviation: **0.043%**)  
+
+---
+
