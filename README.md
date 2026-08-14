@@ -20,7 +20,7 @@
 ---
 ## ⚡ 30-Second Overview
 
-This project builds a fully automated CFD pipeline to **verify supersonic aerodynamic predictions** against analytical shock-expansion theory.
+This project presents an automated CFD verification pipeline for supersonic flow over a double wedge airfoil using Euler equations. Numerical results are verified against the analytical shock expansion theory, achieving high accuracy across different flight regimes and demonstrating excellent agreement between CFD and theory.
 
 - 🎯 **<0.25% error** across 20 cases (Mach 2–4, AoA 0–15°)  
 - 📐 **GCI-based uncertainty:** 0.087%  
@@ -71,6 +71,14 @@ This project builds a fully automated CFD pipeline to **verify supersonic aerody
 
 - **Richardson Extrapolated:** 0.017732  
 - **Analytical Solution:** 0.017740 (Deviation: **0.043%**)  
+
+---
+
+## 🛠️ Pipeline Architecture
+
+- Fully automated parametric study (20 cases)  
+- Structured H-grid via Gmsh API for shock resolution
+- Python-based post-processing (PyVista, Pandas, Matplotlib)  
 
 ---
 
