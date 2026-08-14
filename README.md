@@ -94,3 +94,18 @@ For in-depth mathematical derivations and solver configuration:
 
 ---
 
+---
+
+## 🚀 Next Steps
+
+- Adjoint-based drag optimization  
+- Adaptive mesh refinement (AMR)  
+- Extension to viscous (RANS) simulations  
+
+---
+
+## 👤 Author
+
+**Efe Doğan**  
+Aeronautical Engineering Undergraduate Student  
+*Focus: CFD | High-Speed Aerodynamics | Numerical Methods*
