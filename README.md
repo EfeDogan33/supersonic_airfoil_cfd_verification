@@ -57,7 +57,7 @@ This project builds a fully automated CFD pipeline to **verify supersonic aerody
 
 ---
 
-## 🧪 Grid Convergence (GCI)
+##  Grid Convergence Index (GCI)
 
 - **Observed order:** p = 4.62  
 - **GCI (fine grid):** 0.087%  
