@@ -1,6 +1,6 @@
 <div align="center">
 
-#  Supersonic CFD Verification Pipeline (Double Wedge Airfoil)
+#  Supersonic Double-Wedge Airfoil CFD Verification & Automation Pipeline
 
 > Verified supersonic CFD solution with **<0.25% error** and **<0.09% numerical uncertainty (GCI)**
 
