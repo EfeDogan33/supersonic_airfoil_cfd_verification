@@ -44,3 +44,15 @@ This project builds a fully automated CFD pipeline to **verify supersonic aerody
 | **4.0** | 0°–15° | **< 0.18%** |
 
 ---
+
+### Surface Pressure Validation (Cp)
+
+<div align="center">
+  <img src="./cp_distribution_final.png" width="88%">
+</div>
+
+- Shock regions captured without numerical smearing  
+- Expansion discontinuity resolved sharply  
+- Excellent agreement with analytical distribution  
+
+---
