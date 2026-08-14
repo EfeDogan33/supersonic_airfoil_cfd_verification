@@ -84,3 +84,13 @@ This project presents an automated CFD verification pipeline for supersonic flow
 
 ---
 
+# 📑 Technical Documentation
+
+For in-depth mathematical derivations and solver configuration:
+- 📐 [01. Mesh Generation & GCI Study](docs/01_mesh_generation_and_gci.md)
+- 📖 [02. Analytical Shock-Expansion Theory](docs/02_analytical_theory.md)
+- ⚙️ [03. SU2 Solver Configuration](docs/03_su2_configuration.md)
+- 📊 [04. Post-Processing Pipeline](docs/04_postprocessing_pipeline.md)
+
+---
+
