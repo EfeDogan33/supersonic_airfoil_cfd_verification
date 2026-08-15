@@ -38,3 +38,20 @@ The target downstream function is $\nu(M_2) = \nu(M_1) + \Delta\theta$. The solv
 $$\frac{p_2}{p_1} = \left[ \frac{1 + \frac{\gamma-1}{2} M_1^2}{1 + \frac{\gamma-1}{2} M_2^2} \right]^{\frac{\gamma}{\gamma-1}}$$
 
 ---
+
+## 3. Global Coefficient Integration
+
+After determining the local static pressure ratios for all four faces ($p_1, p_2, p_3, p_4$ relative to $p_\infty$), the local pressure coefficients are evaluated:
+
+$$C_{p,i} = \frac{\frac{p_i}{p_\infty} - 1}{0.5 \gamma M_\infty^2} \quad \text{for } i \in \{1, 2, 3, 4\}$$
+
+By integrating these pressure coefficients over the projected geometry, the global **Axial Force Coefficient ($C_A$)** and **Normal Force Coefficient ($C_N$)** are obtained:
+
+$$C_A = \frac{1}{2} (C_{p1} + C_{p2} - C_{p3} - C_{p4}) \tan(\theta)$$
+$$C_N = \frac{1}{2} (C_{p2} - C_{p1} + C_{p4} - C_{p3})$$
+
+Finally, the total **Wave Drag Coefficient ($C_d$)** is calculated by projecting $C_A$ and $C_N$ onto the freestream velocity vector (accounting for $\alpha$):
+
+$$C_d = C_A \cos(\alpha) + C_N \sin(\alpha)$$
+
+This pipeline strictly mirrors the logic in `src/bisection_solver.py`, ensuring exact analytical benchmarks across the entire operational envelope.
