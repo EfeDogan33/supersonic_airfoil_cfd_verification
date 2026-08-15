@@ -25,3 +25,14 @@ A structured H-grid topology is employed to ensure alignment with shock waves an
 ** Coarse Mesh (86k Cells) **
 <img src="../coarse_grid.png" width="95%">
 
+## 4. Grid Convergence Study (GCI)
+
+* Three-grid refinement analysis performed at $M_\infty = 2.0$, $\alpha = 0^\circ$:
+
+| Grid | Elements | $C_d$ | Refinement Ratio ($r$) |
+| :--- | :---: | :---: | :---: |
+| **Fine (1)** | 302k | **0.017720** | — |
+| **Medium (2)** | 167k | **0.017684** | $r_{21} = 1.342$ |
+| **Coarse (3)** | 86k | **0.017509** | $r_{32} = 1.395$ |
+
+
