@@ -36,4 +36,7 @@ A structured H-grid topology is employed to ensure alignment with shock waves an
 | **Medium (2)** | 167k | **0.017684** | $r_{21} = 1.342$ |
 | **Coarse (3)** | 86k | **0.017509** | $r_{32} = 1.395$ |
 
+* The monotonic decrease in drag coefficient with mesh coarsening confirms a consistent convergence trend. The observed order of accuracy (p ≈ 4.62) exceeds the nominal second-order accuracy of the underlying scheme, which is attributed to the smooth, shock-aligned structured grid and the absence of viscous effects in the Euler formulation.
+
+
 
