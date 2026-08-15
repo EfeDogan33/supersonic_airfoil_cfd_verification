@@ -17,11 +17,11 @@ A structured H-grid topology is employed to ensure alignment with shock waves an
 <div align="center">
 
 ** Fine Mesh (302k Cells) **
-<img src="fine_grid.png" width="95%">
+<img src="./fine_grid.png" width="95%">
 
 ** Medium Mesh (167k Cells) **
-<img src="medium_grid.png" width="95%">
+<img src="./medium_grid.png" width="95%">
 
 ** Coarse Mesh (86k Cells) **
-<img src="coarse_grid.png" width="95%">
+<img src="./coarse_grid.png" width="95%">
 
