@@ -7,7 +7,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/)
 [![SU2](https://img.shields.io/badge/CFD-SU2%20Euler-orange)](https://su2code.github.io/)
 [![Mesh](https://img.shields.io/badge/Mesh-Gmsh-green)](https://gmsh.info/)
-[![Verification](https://img.shields.io/badge/Status-Verified-brightgreen)]()
+
 
 <br>
 
