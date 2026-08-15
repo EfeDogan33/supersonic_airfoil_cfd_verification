@@ -14,3 +14,16 @@ To accurately resolve the forces including the effects of the angle of attack ($
 4. **Face 4 (Lower Rear):** The flow from Face 2 expands over the shoulder by $\delta_4 = 2\theta$.
 
 ---
+
+## 2. Core Aerodynamic Solvers
+
+### 2.1 Oblique Shock Wave Relation
+For a given upstream Mach number ($M_1$) and deflection angle ($\delta$), the weak shock angle ($\beta$) is found by numerically solving the $\theta-\beta-\mathcal{M}$ relation using the **Bisection Method**:
+
+$$\tan \delta = 2 \cot \beta \left[ \frac{M_1^2 \sin^2 \beta - 1}{M_1^2 (\gamma + \cos 2\beta) + 2} \right]$$
+
+Once $\beta$ is converged, the normal Mach number is $M_{n1} = M_1 \sin \beta$. The static pressure ratio and downstream Mach number ($M_2$) are calculated as:
+
+$$\frac{p_2}{p_1} = 1 + \frac{2\gamma}{\gamma + 1}(M_{n1}^2 - 1)$$
+
+$$M_{n2}^2 = \frac{1 + \frac{\gamma - 1}{2} M_{n1}^2}{\gamma M_{n1}^2 - \frac{\gamma - 1}{2}}, \quad M_2 = \frac{M_{n2}}{\sin(\beta - \delta)}$$
