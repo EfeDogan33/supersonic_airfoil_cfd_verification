@@ -12,3 +12,16 @@ A structured H-grid topology is employed to ensure alignment with shock waves an
 * **Outer Boundaries (All):** `MARKER_FARFIELD`
 * **Airfoil Surface:** `MARKER_EULER`
 
+## 3. Mesh Visualizations
+
+<div align="center">
+
+** Fine Mesh (302k Cells) **
+<img src="../images/fine_grid.png" width="95%">
+
+** Medium Mesh (167k Cells) **
+<img src="../images/medium_grid.png" width="95%">
+
+** Coarse Mesh (86k Cells) **
+<img src="../images/coarse_grid.png" width="95%">
+
