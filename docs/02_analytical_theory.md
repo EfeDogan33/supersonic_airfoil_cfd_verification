@@ -27,3 +27,14 @@ Once $\beta$ is converged, the normal Mach number is $M_{n1} = M_1 \sin \beta$. 
 $$\frac{p_2}{p_1} = 1 + \frac{2\gamma}{\gamma + 1}(M_{n1}^2 - 1)$$
 
 $$M_{n2}^2 = \frac{1 + \frac{\gamma - 1}{2} M_{n1}^2}{\gamma M_{n1}^2 - \frac{\gamma - 1}{2}}, \quad M_2 = \frac{M_{n2}}{\sin(\beta - \delta)}$$
+
+### 2.2 Prandtl-Meyer Expansion Fan
+For an expansion turning angle ($\Delta\theta$), the downstream Mach number is determined by evaluating the Prandtl-Meyer function $\nu(M)$:
+
+$$\nu(M) = \sqrt{\frac{\gamma+1}{\gamma-1}} \arctan \sqrt{\frac{\gamma-1}{\gamma+1}(M^2-1)} - \arctan \sqrt{M^2-1}$$
+
+The target downstream function is $\nu(M_2) = \nu(M_1) + \Delta\theta$. The solver uses the **Bisection Method** to inversely find $M_2$. The isentropic pressure ratio is then:
+
+$$\frac{p_2}{p_1} = \left[ \frac{1 + \frac{\gamma-1}{2} M_1^2}{1 + \frac{\gamma-1}{2} M_2^2} \right]^{\frac{\gamma}{\gamma-1}}$$
+
+---
