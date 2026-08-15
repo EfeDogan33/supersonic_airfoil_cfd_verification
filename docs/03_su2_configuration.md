@@ -15,3 +15,16 @@ Since the primary objective is to capture wave drag ($C_d$) induced by shock wav
 * **Freestream Conditions:** $P_\infty = 101325.0 \text{ Pa}$, $T_\infty = 288.15 \text{ K}$
 
 ---
+
+## 2. Spatial Discretization & Numerical Schemes
+
+To accurately capture sharp oblique shock discontinuities without non-physical numerical oscillations, a robust upwind scheme coupled with a slope limiter is utilized.
+
+| Parameter | SU2 Setting | Description |
+| :--- | :--- | :--- |
+| **Convective Flux Scheme** | `HLLC` | Harten-Lax-van Leer-Contact exact Riemann solver, highly accurate for strong shocks. |
+| **Spatial Order** | `MUSCL_FLOW= YES` | Second-order spatial accuracy for the convective fluxes using MUSCL reconstruction. |
+| **Slope Limiter** | `VENKATAKRISHNAN` | Prevents overshoots near shock waves (Coefficient = 0.05) |
+| **Gradient Calculation** | `GREEN_GAUSS` | Standard method for computing spatial gradients on the unstructured grid. |
+
+---
