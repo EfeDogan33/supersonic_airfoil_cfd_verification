@@ -32,6 +32,26 @@ To accurately capture sharp oblique shock discontinuities without non-physical n
 
 Steady-state convergence is achieved using an implicit time-stepping strategy with an adaptive Courant number to accelerate convergence once initial transients pass[cite: 1].
 
-* **Time Stepping:** `EULER_IMPLICIT`
+* **Time Stepping:** `EULER_IMPLICIT` 
 * **Linear Solver:** `FGMRES` with `ILU` preconditioner (Error limit: $10^{-8}$, Max Iterations: 35)
 * **CFL Strategy:** Adaptive CFL (`CFL_ADAPT= YES`) starting at `0.1` and ramping up to a maximum of `300.0`.
+
+### 3.1 Convergence Criteria
+
+The simulation is configured to run for a maximum of 4500 iterations, but will terminate early if the following strict criteria are met:
+
+1. **Residual Drop:** The log-residual must drop by at least 5 orders of magnitude (`CONV_RESIDUAL_MINVAL= -5`).
+2. **Cauchy Criteria (Force Stabilization):** The Drag coefficient must stabilize (`CONV_FIELD= DRAG`) within a tolerance of $10^{-6}$ (`CONV_CAUCHY_EPS= 1E-6`) over the last 100 iterations (`CONV_CAUCHY_ELEMS= 100`).
+
+---
+
+## 4. Boundary Marker Setup
+
+The boundary markers defined during the mesh generation phase are explicitly mapped to SU2 boundary conditions:
+
+```text
+% ---------------- BOUNDARY CONDITIONS ----------------
+MARKER_EULER= ( airfoil )
+MARKER_FAR= ( farfield )
+
+
