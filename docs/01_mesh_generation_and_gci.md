@@ -17,14 +17,14 @@ A structured H-grid topology is employed to ensure alignment with shock waves an
 <div align="center">
 
 ** Fine Mesh (302k Cells) **
-<img src="../fine_grid.png" width="95%">
+<img src="../images/fine_grid.png" width="95%">
 * Figure 1: Structured H-grid used for the fine mesh. The fine mesh is selected as the primary mesh configuration throughout the pipeline, since it maintains a favorable balance between accuracy and computational costs.
 
 ** Medium Mesh (167k Cells) **
-<img src="../medium_grid.png" width="95%">
+<img src="../images/medium_grid.png" width="95%">
 
 ** Coarse Mesh (86k Cells) **
-<img src="../coarse_grid.png" width="95%">
+<img src="../images/coarse_grid.png" width="95%">
 
 ## 4. Grid Convergence Study (GCI)
 
