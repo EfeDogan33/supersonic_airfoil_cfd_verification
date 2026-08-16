@@ -18,3 +18,17 @@ $$C_p = \frac{p - p_\infty}{q_\infty}$$
 * **Static Pressure ($p_\infty$):** Extracted via median distribution across the domain farfield.
 * **Ratio of Specific Heats ($\gamma$):** Fixed to $1.4$ for calorically perfect air.
 
+### 1.2 Numerical Schlieren ($\vert{}\nabla \rho\vert{}$)
+To sharply visualize shock waves, expansion fans, and slip lines without experimental optical rigs, the spatial density gradient is numerically calculated using PyVista’s `compute_derivative`:
+
+$$\nabla \rho = \left( \frac{\partial \rho}{\partial x}, \frac{\partial \rho}{\partial y}, \frac{\partial \rho}{\partial z} \right)$$
+
+$$\vert{}\nabla \rho\vert{} = \sqrt{\left(\frac{\partial \rho}{\partial x}\right)^2 + \left(\frac{\partial \rho}{\partial y}\right)^2 + \left(\frac{\partial \rho}{\partial z}\right)^2}$$
+
+To enhance wave contrast across strong shock discontinuities, a square-root scaling ($\sqrt{\vert{}\nabla \rho\vert{}}$) is applied and scaled against the 98.5th percentile of the gradient field:
+
+$$\text{Schlieren Field} = \sqrt{\vert{}\nabla \rho\vert{}}$$
+
+---
+
+
