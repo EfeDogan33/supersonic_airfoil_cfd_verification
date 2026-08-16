@@ -28,8 +28,23 @@ $$\vert{}\nabla \rho\vert{} = \sqrt{\left(\frac{\partial \rho}{\partial x}\right
 To enhance wave contrast across strong shock discontinuities, a square-root scaling ($\sqrt{\vert{}\nabla \rho\vert{}}$) is applied and scaled against the 98.5th percentile of the gradient field:
 
 $$\text{Schlieren Field} = \sqrt{\vert{}\nabla \rho\vert{}}$$
+
 <img src="../images/m4.0_a0.0_schlieren.png" width="95%">
 
+<p align="center">
+Figure 1:</b> Numerical Schlieren contour showing shock waves and expansion fans at $$M_\infty = 4.0 $$ and $alpha = 0^\circ$.
+</p>
+
 ---
+
+## 2. High-Resolution 4K Rendering Strategy
+
+The pipeline utilizes off-screen rendering (`pv.Plotter(off_screen=True)`) to produce headless, ultra-high-definition ($3840 \times 2160$) visualizations without perspective distortion.
+
+| Field | Color Map | Background | Dynamic Range / Clipping (`clim`) | Purpose |
+| :--- | :--- | :--- | :--- | :--- |
+| **Mach Number** | `turbo` | White | $[3^{\text{rd}}\text{ percentile}, \max(M)]$ | Captures velocity deficits and post-shock expansions. |
+| **Pressure Coeff. ($C_p$)** | `coolwarm` | White | `[-Cp_max (98.5%), +Cp_max (98.5%)]` | Symmetrical color scale centered at $C_p = 0$. |
+| **Numerical Schlieren** | `bone` | Black | $[0.0, 98.5^{\text{th}}\text{ percentile}]$ | Mimics optical shadowgraph / Schlieren experimental imaging. |
 
 
