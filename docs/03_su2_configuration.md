@@ -30,7 +30,7 @@ To accurately capture sharp oblique shock discontinuities without non-physical n
 ---
 ## 3. Time Integration & Convergence Strategy
 
-Steady-state convergence is achieved using an implicit time-stepping strategy with an adaptive Courant number to accelerate convergence once initial transients pass[cite: 1].
+Steady-state convergence is achieved using an implicit time-stepping strategy with an adaptive Courant number to accelerate convergence once initial transients pass.
 
 * **Time Stepping:** `EULER_IMPLICIT` 
 * **Linear Solver:** `FGMRES` with `ILU` preconditioner (Error limit: $10^{-8}$, Max Iterations: 35)
