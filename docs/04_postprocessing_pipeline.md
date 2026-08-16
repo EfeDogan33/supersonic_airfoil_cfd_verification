@@ -28,7 +28,7 @@ $$\vert{}\nabla \rho\vert{} = \sqrt{\left(\frac{\partial \rho}{\partial x}\right
 To enhance wave contrast across strong shock discontinuities, a square-root scaling ($\sqrt{\vert{}\nabla \rho\vert{}}$) is applied and scaled against the 98.5th percentile of the gradient field:
 
 $$\text{Schlieren Field} = \sqrt{\vert{}\nabla \rho\vert{}}$$
-<img src="../images/m4.0_a0.0_schlieren.png" width="95%">
+<img src="/images/m4.0_a0.0_schlieren.png" width="95%">
 
 ---
 
