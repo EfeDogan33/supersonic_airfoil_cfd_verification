@@ -54,4 +54,34 @@ The pipeline utilizes off-screen rendering (`pv.Plotter(off_screen=True)`) to pr
 
 ---
 
+## 3. History Parsing & Aerodynamic Data Export
+
+The post-processing workflow automatically reads SU2 convergence logs and aggregates multi-case parameters into structured reports.
+
+### 3.1 History Data Extraction (`parse_history_data`)
+* Scans the working directory for `history.csv` / `history.dat` or prefix-specific logs.
+* Extracts the final converged values for Lift Coefficient ($C_l$) and Drag Coefficient ($C_d$).
+
+### 3.2 Automated Excel Reporting (`export_to_excel`)
+* Aggregates simulation outputs across all evaluated Mach numbers and angles of attack ($\alpha$).
+* Writes structured data frames to `.xlsx` sheets with automatic column-width formatting using `openpyxl`.
+
+---
+
+## 4. Pipeline Execution Summary
+
+```text
+       SU2 Output (.vtu)               SU2 History (.csv / .dat)
+               │                                   │
+               ▼                                   ▼
+    [PyVista Mesh Ingestion]              [Pandas History Parser]
+               │                                   │
+     ├── Dynamic Cp Computation                    └── Final Cl & Cd Extraction
+     └── Gradient Vector Calculation (∇ρ)                  │
+               │                                           ▼
+               ▼                                  [Data Aggregation]
+     [Off-Screen 4K Rendering]                             │
+     ├── Mach Contour (turbo)                              ▼
+     ├── Cp Contour (coolwarm)               [Excel Report (.xlsx)]
+     └── Numerical Schlieren (bone)
 
