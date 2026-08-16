@@ -11,7 +11,7 @@
 
 <br>
 
-<img src="../images/m4.0_a15.0_mach.png" width="95%">
+<img src="images/m4.0_a15.0_mach.png" width="95%">
 
 <sub>Mach 4.0, α = 15° — Oblique shocks and expansion regions accurately captured</sub>
 
@@ -34,7 +34,7 @@ This project presents an automated CFD verification pipeline for supersonic flow
 ### Drag Coefficient Verification
 
 <div align="center">
-  <img src="./cd_verification.png" width="88%">
+  <img src="images/cd_verification.png" width="88%">
 </div>
 
 | Mach | AoA Range | Max Error |
@@ -50,7 +50,7 @@ This project presents an automated CFD verification pipeline for supersonic flow
 ### Surface Pressure Validation (Cp)
 
 <div align="center">
-  <img src="./cp_distribution_final.png" width="88%">
+  <img src="images/cp_distribution_final.png" width="88%">
 </div>
 
 - Shock regions captured without numerical smearing  
