@@ -47,4 +47,11 @@ The pipeline utilizes off-screen rendering (`pv.Plotter(off_screen=True)`) to pr
 | **Pressure Coeff. ($C_p$)** | `coolwarm` | White | `[-Cp_max (98.5%), +Cp_max (98.5%)]` | Symmetrical color scale centered at $C_p = 0$. |
 | **Numerical Schlieren** | `bone` | Black | $[0.0, 98.5^{\text{th}}\text{ percentile}]$ | Mimics optical shadowgraph / Schlieren experimental imaging. |
 
+### 2.1 Camera & View Alignment
+* **Projection:** Parallel projection (`enable_parallel_projection`) to prevent artificial perspective scaling.
+* **Orientation:** Planar $XY$ alignment (`view_xy`).
+* **Zoom Level:** Fixed $4.0\times$ optical zoom centered on the double-wedge airfoil geometry.
+
+---
+
 
