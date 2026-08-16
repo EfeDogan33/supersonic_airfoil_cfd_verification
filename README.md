@@ -11,7 +11,7 @@
 
 <br>
 
-<img src="./m4.0_a15.0_mach.png" width="95%">
+<img src="../images/m4.0_a15.0_mach.png" width="95%">
 
 <sub>Mach 4.0, α = 15° — Oblique shocks and expansion regions accurately captured</sub>
 
