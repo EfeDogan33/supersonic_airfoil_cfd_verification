@@ -92,7 +92,6 @@ For in-depth mathematical derivations and solver configuration:
 - ⚙️ [03. SU2 Solver Configuration](docs/03_su2_configuration.md)
 - 📊 [04. Post-Processing Pipeline](docs/04_postprocessing_pipeline.md)
 
----
 
 ---
 
