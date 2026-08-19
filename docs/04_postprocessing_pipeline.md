@@ -64,24 +64,24 @@ The post-processing workflow automatically reads SU2 convergence logs and aggreg
 
 ### 3.2 Automated Excel Reporting (`export_to_excel`)
 * Aggregates simulation outputs across all evaluated Mach numbers and angles of attack ($\alpha$).
-* Writes structured data frames to `.xlsx` sheets with automatic column-width formatting using `openpyxl`.
-
----
+* Writes structured data frames to `.xlsx` sheets with automatic column-width formatting using
 
 ## 4. Pipeline Execution Summary
 
-```text
-       SU2 Output (.vtu)               SU2 History (.csv / .dat)
-               │                                   │
-               ▼                                   ▼
-    [PyVista Mesh Ingestion]              [Pandas History Parser]
-               │                                   │
-     ├── Dynamic Cp Computation                    └── Final Cl & Cd Extraction
-     └── Gradient Vector Calculation (∇ρ)                  │
-               │                                           ▼
-               ▼                                  [Data Aggregation]
-     [Off-Screen 4K Rendering]                             │
-     ├── Mach Contour (turbo)                              ▼
-     ├── Cp Contour (coolwarm)               [Excel Report (.xlsx)]
-     └── Numerical Schlieren (bone)
+<pre style="background-color: #f6f8fa; padding: 16px; border-radius: 6px; overflow-x: auto; font-family: monospace; line-height: 1.45; font-size: 13px;">
+       SU2 Output (.vtu)                       SU2 History (.csv / .dat)
+              │                                           │
+              ▼                                           ▼
+    [PyVista Mesh Ingestion]                    [Pandas History Parser]
+              │                                           │
+              ├─ Dynamic Cp Computation                   └─ Final Cl & Cd Extraction
+              ├─ Gradient Vector Calculation (∇ρ)                 │
+              │                                                   ▼
+              ▼                                           [Data Aggregation]
+    [Off-Screen 4K Rendering]                                     │
+              ├─ Mach Contour (turbo)                             ▼
+              ├─ Cp Contour (coolwarm)                   [Excel Report (.xlsx)]
+              └─ Numerical Schlieren (bone)
+</pre>
+
 ```
