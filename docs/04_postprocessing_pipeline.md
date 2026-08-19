@@ -84,4 +84,4 @@ The post-processing workflow automatically reads SU2 convergence logs and aggreg
      ├── Mach Contour (turbo)                              ▼
      ├── Cp Contour (coolwarm)               [Excel Report (.xlsx)]
      └── Numerical Schlieren (bone)
-
+```
