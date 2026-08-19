@@ -21,7 +21,8 @@ $$C_p = \frac{p - p_\infty}{q_\infty}$$
 ### 1.2 Numerical Schlieren ($\vert{}\nabla \rho\vert{}$)
 To sharply visualize shock waves, expansion fans, and slip lines without experimental optical rigs, the spatial density gradient is numerically calculated using PyVista’s `compute_derivative`:
 
-$$\nabla \rho = \left( \frac{\partial \rho}{\partial x}, \frac{\partial \rho}{\partial y}, \frac{\partial \rho}{\partial z} \right)$$
+$$|\nabla \rho| = \sqrt{\left(\frac{\partial \rho}{\partial x}\right)^2 + \left(\frac{\partial \rho}{\partial y}\right)^2 + \left(\frac{\partial \rho}{\partial z}\right)^2}$$
+
 
 $$\vert{}\nabla \rho\vert{} = \sqrt{\left(\frac{\partial \rho}{\partial x}\right)^2 + \left(\frac{\partial \rho}{\partial y}\right)^2 + \left(\frac{\partial \rho}{\partial z}\right)^2}$$
 
