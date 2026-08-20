@@ -7,6 +7,12 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/)
 [![SU2](https://img.shields.io/badge/CFD-SU2%20Euler-orange)](https://su2code.github.io/)
 [![Mesh](https://img.shields.io/badge/Mesh-Gmsh-green)](https://gmsh.info/)
+<div align="center">
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/EfeDogan33/supersonic_airfoil_cfd_verification)
+
+</div>
+
 
 
 <br>
